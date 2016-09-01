@@ -1,0 +1,13 @@
+/*font-family: 'Stalinist One', cursive;
+font-family: 'Aldrich', sans-serif;
+font-family: 'VT323', monospace;*/
+
+#title {
+	font-family: 'Stalinist One', cursive;
+	font-size: 46px;
+}
+
+.arena {
+	visibility: hidden;
+	background-image: url("../images/ringPlaceHolder.jpg");
+}

@@ -4,19 +4,53 @@
 
 	<!-- css reset -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	
+
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Aldrich|Stalinist+One|VT323" rel="stylesheet">	
 	<!-- my stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	
+	<!-- javascript -->   
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 
+	<!-- materialize javascript -->
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+		<!-- my javascript -->
+	<script type="text/javascript" src="assets/javascript/meow.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Kitten Game</title>
 </head>
 <body>
+<div class="container">
+	<div class="row">
+	<div id="title" class="col s12 center-align">
+		Pick a kitten to start fighting.
+	</div>
+</div>
+  <div class="carousel">
+    <a id="frogTwins" class="carousel-item" href="#one!"><img src="assets/images/kittenPlaceHolder.jpg"></a>
+    <a id="secretLeopard" class="carousel-item" href="#two!"><img src="assets/images/kittenPlaceHolder2.jpg"></a>
+    <a id="shawty" class="carousel-item" href="#three!"><img src="assets/images/kittenPlaceHolder3.jpg"></a>
+    <a id="alienGlamCat" class="carousel-item" href="#four!"><img src="assets/images/kittenPlaceHolder4.jpg"></a>
+  </div>
+  <div class="arena">
+  	<div class="row">
+  		<div id="enemy" class="col s5 left-align"></div>
+  		<div id="player" class="col s5 right-align"></div>
+  	</div>
+  </div>
+</div>
+
 	
 </body>
-<script type="text/javascript" src="assets/javascript/meow.js">
+
 </html>
