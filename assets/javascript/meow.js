@@ -3,6 +3,7 @@ $(document).ready(function(){
       
       var player = "";
       var enemy ="";
+      var playing = false;
 
       var frogTwins = {
       	HP: 100,
@@ -56,30 +57,58 @@ $(document).ready(function(){
       	}
       };
 
-      $(".carousel-item").on("click")({
-            	$("#title").hide;
-            	$("#title").html("")
-            	switch(
-		            case 0:
-		      		id = "#frogTwins";
-		      		frogTwins.play();
-		      		break;
-		      		
-		      		case 1:
-		      		id = "#secretLeopard";
-		      		secretLeopard.play();
-		      		break;
+      $(".carousel-item").on("click" function(){
+			playing = true;
+	    	$("#title").hide;
+	    	$("#title").html("")
+	    	$(".arena").style.visibility=visible;
+	    	switch(
+	            case 0:
+	      		id = "#frogTwins";
+	      		frogTwins.play();
+	      		break;
+	      		
+	      		case 1:
+	      		id = "#secretLeopard";
+	      		secretLeopard.play();
+	      		break;
 
-		      		case 2:
-		      		id = "#shawty";
-		      		shawty.play();
-		      		break;
+	      		case 2:
+	      		id = "#shawty";
+	      		shawty.play();
+	      		break;
 
-		      		case 3:
-		      		id ="#alienGlamCat";
-		      		alienGlamCat.play();
-		      		break;
-				)
-      });
+	      		case 3:
+	      		id ="#alienGlamCat";
+	      		alienGlamCat.play();
+	      		break;
+			)
+			$("#gameText").html("Pick an opponent!")
+	      });
+
+      $(".enemyBin").on("click" function(){
+      			switch(
+	            case 0:
+	      		id = "#frogTwins";
+	      		frogTwins.play();
+	      		break;
+	      		
+	      		case 1:
+	      		id = "#secretLeopard";
+	      		secretLeopard.play();
+	      		break;
+
+	      		case 2:
+	      		id = "#shawty";
+	      		shawty.play();
+	      		break;
+
+	      		case 3:
+	      		id ="#alienGlamCat";
+	      		alienGlamCat.play();
+	      		break;
+			)
+      })
+
       
     });
